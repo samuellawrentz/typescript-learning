@@ -1,0 +1,21 @@
+{
+  "name": "d3arc",
+  "version": "1.0.0",
+  "description": "A d3 arc",
+  "main": "arc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "start:dev": "webpack-dev-server --open"
+  },
+  "author": "Samuel Lawrentz",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/d3": "^3.5.41",
+    "ts-loader": "^4.4.2",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
