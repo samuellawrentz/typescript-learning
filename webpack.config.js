@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
   entry: './src/arc.ts',
   output: {
@@ -12,6 +14,11 @@ module.exports = {
 devServer: {
   contentBase: './dist'
 },
+plugins: [
+  new HtmlWebpackPlugin({
+    template: 'src/index.html'
+  })
+],
 devtool: 'source-map',
 mode: 'development',
   module: {
